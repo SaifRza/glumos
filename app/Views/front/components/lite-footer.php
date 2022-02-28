@@ -1,0 +1,1 @@
+<div class="bg-light text-muted py-3 text-center mt-5" style="position:relative;bottom:0;width:100%"><hr class="w-50 m-auto mb-3"> ©2022 Glumos All Rights Reserved</div>

@@ -1,0 +1,37 @@
+CRITICAL - 2022-02-05 06:03:14 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/webleade/glumos.webleader.in/app/Views/front/components/job-application.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/webleade/...', 17, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#4 /home/webleade/glumos.webleader.in/app/Views/front/user/applyJobs.php(48): CodeIgniter\View\View->include('front/component...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/appl...', Array, true)
+#8 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(322): view('front/user/appl...', Array)
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->applyJob('b098ddcdee43026...')
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-02-05 07:43:51 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/webleade/glumos.webleader.in/app/Views/admin/job-seeker.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/webleade/...', 8, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('admin/job-seeke...', Array, true)
+#4 /home/webleade/glumos.webleader.in/app/Controllers/Admin.php(73): view('admin/job-seeke...', Array)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Admin->jobSeeker()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-05 07:44:11 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/webleade/glumos.webleader.in/app/Views/admin/job-seeker.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/webleade/...', 8, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('admin/job-seeke...', Array, true)
+#4 /home/webleade/glumos.webleader.in/app/Controllers/Admin.php(73): view('admin/job-seeke...', Array)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Admin->jobSeeker()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

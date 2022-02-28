@@ -1,0 +1,134 @@
+CRITICAL - 2022-02-01 04:07:21 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 04:07:32 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 04:07:33 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 04:14:27 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 04:14:38 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 04:14:41 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 04:16:06 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 04:16:09 --> Invalid argument supplied for foreach()
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/webleade/...', 81, Array)
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:16:15 --> Invalid argument supplied for foreach()
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/webleade/...', 81, Array)
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:26:34 --> Object of class stdClass could not be converted to string
+#0 /home/webleade/glumos.webleader.in/app/Views/front/user/dashboard-employer.php(117): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', '/home/webleade/...', 117, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/user/dash...', NULL, true)
+#4 /home/webleade/glumos.webleader.in/app/Views/front/user/index.php(51): CodeIgniter\View\View->include('front/user/dash...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/inde...', Array, true)
+#8 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(98): view('front/user/inde...', Array)
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-02-01 04:51:38 --> syntax error, unexpected '}'
+#0 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/user/dash...', NULL, true)
+#2 /home/webleade/glumos.webleader.in/app/Views/front/user/index.php(51): CodeIgniter\View\View->include('front/user/dash...')
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/inde...', Array, true)
+#6 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(98): view('front/user/inde...', Array)
+#7 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#8 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-01 04:58:04 --> Invalid file: front/user/all-applicants.php
+#0 /home/webleade/glumos.webleader.in/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/user/all-...')
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/user/all-...', NULL, true)
+#2 /home/webleade/glumos.webleader.in/app/Views/front/user/view-applicants.php(51): CodeIgniter\View\View->include('front/user/all-...')
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/view...', Array, true)
+#6 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(348): view('front/user/view...')
+#7 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->allApplicants('d0d23363e05bdc6...')
+#8 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-01 08:41:49 --> Call to a member function isMyPostedJob() on null
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->allApplicants('d0d23363e05bdc6...')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 09:28:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getAllResult()
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(348): App\Models\Employers->jobDetails('15')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->allApplicants('d0d23363e05bdc6...')
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-01 09:39:56 --> Table 'webleade_glumos.user_info' doesn't exist
+CRITICAL - 2022-02-01 09:39:56 --> Call to a member function getResult() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(350): App\Models\Employers->getAllApplicants('8349ba1bd3e6ad4...')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->allApplicants('8349ba1bd3e6ad4...')
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-01 09:57:34 --> Table 'webleade_glumos.user_info' doesn't exist
+CRITICAL - 2022-02-01 09:57:34 --> Call to a member function getResult() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(350): App\Models\Employers->getAllApplicants('8349ba1bd3e6ad4...')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->allApplicants('8349ba1bd3e6ad4...')
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-01 09:57:54 --> Unknown column 'jobseekers.jobseekers.id' in 'on clause'
+CRITICAL - 2022-02-01 09:57:54 --> Call to a member function getResult() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(350): App\Models\Employers->getAllApplicants('8349ba1bd3e6ad4...')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->allApplicants('8349ba1bd3e6ad4...')
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

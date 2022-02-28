@@ -1,0 +1,75 @@
+CRITICAL - 2022-01-31 07:42:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(77): App\Models\Employers->countSubmissions('d0d23363e05bdc6...')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 07:44:13 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 07:44:54 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 07:44:56 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 07:52:06 --> syntax error, unexpected '}'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-31 07:53:04 --> syntax error, unexpected '}'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-31 07:53:55 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 07:55:01 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 07:55:13 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 07:55:15 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-31 07:56:58 --> Unsupported operand types
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->userAuth()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

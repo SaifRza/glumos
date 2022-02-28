@@ -1,0 +1,42 @@
+CRITICAL - 2022-02-20 05:32:26 --> Class 'App\Controllers\Careerjet_API' not found
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\PostJob->careerJet()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostJob))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 05:34:00 --> Cannot declare class Careerjet_API, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-20 05:34:59 --> Class 'App\Controllers\Careerjet_API' not found
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\PostJob->careerJet()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostJob))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 05:36:12 --> Cannot declare class Careerjet_API, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-20 05:37:54 --> Class 'App\Controllers\Careerjet_API' not found
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\PostJob->careerJet()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostJob))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 05:40:44 --> Cannot declare class Careerjet_API, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-20 05:44:50 --> Cannot declare class Careerjet_API, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-20 05:44:52 --> Cannot declare class Careerjet_API, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-20 05:46:52 --> Cannot declare class Careerjet_API, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-20 06:28:23 --> Cannot declare class Careerjet_API, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-20 06:39:12 --> Cannot declare class Careerjet_API, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

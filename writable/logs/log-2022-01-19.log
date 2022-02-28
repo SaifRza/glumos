@@ -1,0 +1,42 @@
+ERROR - 2022-01-19 05:35:05 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Network is unreachable)
+ERROR - 2022-01-19 05:49:12 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Network is unreachable)
+ERROR - 2022-01-19 05:49:45 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Network is unreachable)
+ERROR - 2022-01-19 05:51:07 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 05:59:29 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:00:04 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:00:31 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:01:24 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:02:58 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Network is unreachable)
+ERROR - 2022-01-19 06:08:52 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:09:44 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:18:05 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:18:22 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:18:42 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:20:40 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:34:08 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:38:30 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:40:19 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:45:29 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 06:58:48 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 07:00:20 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Network is unreachable)
+ERROR - 2022-01-19 07:01:57 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Network is unreachable)
+ERROR - 2022-01-19 07:05:02 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-01-19 07:06:26 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.gmail.com:465 (Network is unreachable)
+ERROR - 2022-01-19 07:13:07 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.google.com:465 (Network is unreachable)

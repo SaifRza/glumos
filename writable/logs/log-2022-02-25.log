@@ -1,0 +1,6 @@
+ERROR - 2022-02-25 07:08:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= (' Fullstack Deveoper Intern','Mereka','1','0','KL','2021-10-15','')
+WHERE ...' at line 1
+ERROR - 2022-02-25 07:08:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('Bachelor','','1','1','','','')
+WHERE `email` = 'thilak014@gmail.com'' at line 1
+ERROR - 2022-02-25 07:09:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('Bachelor\'s of Computer Science','UTM','1','1','Johor, Malaysia','2018-09...' at line 1
+ERROR - 2022-02-25 07:10:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('Bachelor\'s of Computer Science','UTM','1','1','Johor, Malaysia','2018-09...' at line 1

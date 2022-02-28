@@ -1,0 +1,21 @@
+CRITICAL - 2022-02-18 03:50:54 --> syntax error, unexpected 'Pacifico' (T_STRING)
+#0 /home/webleade/glumos.webleader.in/system/Router/Router.php(176): CodeIgniter\Router\Router->autoRoute('AutoEmail/sendM...')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(718): CodeIgniter\Router\Router->handle('AutoEmail/sendM...')
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-18 04:10:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 /home/webleade/glumos.webleader.in/app/Controllers/AutoEmail.php(197): App\Models\JobModel->getJobsForEmail()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\AutoEmail->sendMail()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoEmail))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-18 04:11:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 /home/webleade/glumos.webleader.in/app/Controllers/AutoEmail.php(197): App\Models\JobModel->getJobsForEmail()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\AutoEmail->sendMail()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoEmail))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

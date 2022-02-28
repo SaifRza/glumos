@@ -1,0 +1,422 @@
+CRITICAL - 2022-01-28 03:21:27 --> Class 'Time' not found
+#0 /home/webleade/glumos.webleader.in/system/View/View.php(214): include()
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#3 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#7 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(111): view('front/user/brow...', Array)
+#8 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-01-28 03:22:11 --> Class 'Time' not found
+#0 /home/webleade/glumos.webleader.in/system/View/View.php(214): include()
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#3 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#7 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(112): view('front/user/brow...', Array)
+#8 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-01-28 03:22:16 --> Class 'Time' not found
+#0 /home/webleade/glumos.webleader.in/system/View/View.php(214): include()
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#3 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#7 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(112): view('front/user/brow...', Array)
+#8 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-01-28 03:29:32 --> date_diff() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_diff() exp...', '/home/webleade/...', 187, Array)
+#1 /home/webleade/glumos.webleader.in/app/Views/front/components/browse-jobs.php(187): date_diff('2022-01-28', '2022-01-27 07:3...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#5 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#7 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#9 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(112): view('front/user/brow...', Array)
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-28 03:30:29 --> date_diff() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_diff() exp...', '/home/webleade/...', 188, Array)
+#1 /home/webleade/glumos.webleader.in/app/Views/front/components/browse-jobs.php(188): date_diff('2022-01-28', '2022-01-27 07:3...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#5 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#7 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#9 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(112): view('front/user/brow...', Array)
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-28 03:30:47 --> date_diff() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_diff() exp...', '/home/webleade/...', 188, Array)
+#1 /home/webleade/glumos.webleader.in/app/Views/front/components/browse-jobs.php(188): date_diff('2022-01-28 03:3...', '2022-01-27 07:3...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#5 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#7 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#9 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(112): view('front/user/brow...', Array)
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-28 03:31:33 --> date_diff() expects parameter 2 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_diff() exp...', '/home/webleade/...', 188, Array)
+#1 /home/webleade/glumos.webleader.in/app/Views/front/components/browse-jobs.php(188): date_diff(Object(DateTime), '2022-01-27 07:3...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#5 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#7 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#9 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(112): view('front/user/brow...', Array)
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-28 03:32:06 --> date_diff() expects parameter 2 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_diff() exp...', '/home/webleade/...', 188, Array)
+#1 /home/webleade/glumos.webleader.in/app/Views/front/components/browse-jobs.php(188): date_diff(Object(DateTime), '2022-01-27 07:3...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#5 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#7 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#9 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(112): view('front/user/brow...', Array)
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-28 10:45:33 --> syntax error, unexpected ':', expecting ')'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-28 10:46:18 --> syntax error, unexpected ':', expecting ')'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-28 10:46:33 --> syntax error, unexpected ':', expecting ')'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-28 10:48:18 --> syntax error, unexpected ':', expecting ')'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-28 10:49:37 --> syntax error, unexpected ':', expecting ')'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-28 11:08:07 --> syntax error, unexpected ':', expecting ')'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-28 11:11:01 --> Unknown column 'applicant_id' in 'where clause'
+CRITICAL - 2022-01-28 11:11:01 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Applicants.php(45): App\Models\Applications->getApplied('81604b026a1a1f5...', '4')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 11:11:33 --> Unknown column 'applicant_id' in 'where clause'
+CRITICAL - 2022-01-28 11:11:33 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Applicants.php(45): App\Models\Applications->getApplied('81604b026a1a1f5...', '4')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 11:12:18 --> Unknown column 'applicant_id' in 'where clause'
+CRITICAL - 2022-01-28 11:12:18 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Applicants.php(46): App\Models\Applications->getApplied('81604b026a1a1f5...', '4')
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-28 11:17:41 --> syntax error, unexpected ':', expecting ')'
+#0 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/webleade/...')
+#1 /home/webleade/glumos.webleader.in/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-28 11:26:36 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:28:09 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:29:34 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:29:39 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:32:37 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:33:17 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:33:20 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:33:59 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:34:09 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:35:31 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:35:47 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:37:11 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:37:16 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:38:19 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:38:22 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:39:07 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:48:20 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:48:51 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:49:45 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:50:14 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-28 11:50:15 --> Cannot use object of type stdClass as array
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Applicants->myApplied()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applicants))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-28 11:57:02 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 11:57:02 --> Call to a member function getResult() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 11:59:24 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 11:59:24 --> Call to a member function getResult() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 11:59:38 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 11:59:38 --> Call to a member function getResult() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 11:59:39 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 11:59:40 --> Call to a member function getResult() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 12:03:45 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 12:03:45 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 12:05:56 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 12:05:56 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 12:06:14 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 12:06:14 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 12:07:40 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 12:07:40 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 12:08:12 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 12:08:12 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-28 12:08:15 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-28 12:08:15 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

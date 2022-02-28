@@ -1,0 +1,12 @@
+CRITICAL - 2022-01-22 03:24:06 --> Call to undefined function App\Controllers\jsone_encode()
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Browse->graphQl()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Browse))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-22 03:24:38 --> Call to undefined function App\Controllers\jsone_decode()
+#0 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Browse->graphQl()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Browse))
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

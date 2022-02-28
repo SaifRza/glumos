@@ -1,0 +1,264 @@
+CRITICAL - 2022-01-15 04:49:13 --> Invalid file: front/forget-password.php
+#0 /home/cashwinl/glumos.webblio.com/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/forget-pa...')
+#1 /home/cashwinl/glumos.webblio.com/system/Common.php(1097): CodeIgniter\View\View->render('front/forget-pa...', Array, true)
+#2 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(21): view('front/forget-pa...')
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->forgetPass()
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-15 04:50:18 --> Invalid file: front/forget-password.php
+#0 /home/cashwinl/glumos.webblio.com/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/forget-pa...')
+#1 /home/cashwinl/glumos.webblio.com/system/Common.php(1097): CodeIgniter\View\View->render('front/forget-pa...', Array, true)
+#2 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(21): view('front/forget-pa...')
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->forgetPass()
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-15 05:16:04 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 05:44:49 --> Class 'App\Controllers\JobSeeker' not found
+#0 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->changePassword('1ac76c098d96955...')
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-15 05:45:12 --> Table 'cashwinl_glumos.reset_passwords' doesn't exist
+ERROR - 2022-01-15 05:47:17 --> Table 'cashwinl_glumos.reset_passwords' doesn't exist
+ERROR - 2022-01-15 05:47:44 --> Table 'cashwinl_glumos.reset_passwords' doesn't exist
+CRITICAL - 2022-01-15 05:49:18 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 /home/cashwinl/glumos.webblio.com/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cashwinl/...')
+#1 /home/cashwinl/glumos.webblio.com/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-15 05:53:34 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 05:53:37 --> md5() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'md5() expects p...', '/home/cashwinl/...', 132, Array)
+#1 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(132): md5(Object(CodeIgniter\Email\Email))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-15 05:59:17 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 05:59:20 --> md5() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'md5() expects p...', '/home/cashwinl/...', 129, Array)
+#1 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(129): md5(Object(CodeIgniter\Email\Email))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-15 05:59:20 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 05:59:23 --> md5() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'md5() expects p...', '/home/cashwinl/...', 129, Array)
+#1 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(129): md5(Object(CodeIgniter\Email\Email))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-15 06:00:22 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:00:25 --> md5() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'md5() expects p...', '/home/cashwinl/...', 129, Array)
+#1 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(129): md5(Object(CodeIgniter\Email\Email))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-15 06:00:49 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:00:52 --> md5() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'md5() expects p...', '/home/cashwinl/...', 129, Array)
+#1 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(129): md5(Object(CodeIgniter\Email\Email))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-15 06:01:40 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:02:06 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:02:10 --> md5() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'md5() expects p...', '/home/cashwinl/...', 129, Array)
+#1 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(129): md5(Object(CodeIgniter\Email\Email))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-15 06:02:19 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:02:22 --> md5() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'md5() expects p...', '/home/cashwinl/...', 129, Array)
+#1 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(129): md5(Object(CodeIgniter\Email\Email))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-15 06:03:51 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:03:55 --> md5() expects parameter 1 to be string, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'md5() expects p...', '/home/cashwinl/...', 129, Array)
+#1 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(129): md5(Object(CodeIgniter\Email\Email))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-15 06:04:24 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:09:58 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:10:00 --> You must set the database table to be used with your query.
+#0 /home/cashwinl/glumos.webblio.com/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/cashwinl/glumos.webblio.com/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(131): CodeIgniter\Model->__call('addToResetPassw...', Array)
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-15 06:12:38 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:12:54 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:12:54 --> You must set the database table to be used with your query.
+#0 /home/cashwinl/glumos.webblio.com/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/cashwinl/glumos.webblio.com/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(83): CodeIgniter\Model->__call('addToResetPassw...', Array)
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-15 06:13:06 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:13:06 --> You must set the database table to be used with your query.
+#0 /home/cashwinl/glumos.webblio.com/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/cashwinl/glumos.webblio.com/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(83): CodeIgniter\Model->__call('addToResetPassw...', Array)
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-15 06:14:10 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:14:14 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:15:01 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:15:03 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:15:11 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:15:15 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:15:21 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:17:16 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:17:16 --> You must set the database table to be used with your query.
+#0 /home/cashwinl/glumos.webblio.com/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/cashwinl/glumos.webblio.com/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(83): CodeIgniter\Model->__call('addToResetPassw...', Array)
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-15 06:17:47 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:17:48 --> You must set the database table to be used with your query.
+#0 /home/cashwinl/glumos.webblio.com/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/cashwinl/glumos.webblio.com/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(83): CodeIgniter\Model->__call('addToResetPassw...', Array)
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-15 06:17:50 --> Unknown column 'verification' in 'where clause'
+CRITICAL - 2022-01-15 06:17:50 --> You must set the database table to be used with your query.
+#0 /home/cashwinl/glumos.webblio.com/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/cashwinl/glumos.webblio.com/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(83): CodeIgniter\Model->__call('addToResetPassw...', Array)
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#4 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-15 06:18:26 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:19:59 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:21:43 --> Unknown column 'verification' in 'where clause'
+ERROR - 2022-01-15 06:53:01 --> Unknown column 'token' in 'where clause'
+CRITICAL - 2022-01-15 06:54:05 --> Cannot use object of type stdClass as array
+#0 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-15 06:55:05 --> Cannot use object of type stdClass as array
+#0 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-15 06:55:19 --> Cannot use object of type stdClass as array
+#0 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-15 06:55:36 --> Cannot use object of type stdClass as array
+#0 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-15 06:55:40 --> Cannot use object of type stdClass as array
+#0 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-15 06:56:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResults()
+#0 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(68): App\Models\JobSeekers->getTokenInfo('1ac76c098d96955...')
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-15 06:56:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResults()
+#0 /home/cashwinl/glumos.webblio.com/app/Controllers/Auth.php(68): App\Models\JobSeekers->getTokenInfo('1ac76c098d96955...')
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Auth->resetProcess()
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-15 08:26:31 --> Call to a member function get() on null
+#0 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Dashboard->profile()
+#1 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-15 08:27:25 --> Invalid argument supplied for foreach()
+#0 /home/cashwinl/glumos.webblio.com/app/Views/front/user/dashboard-employer.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/cashwinl/...', 109, Array)
+#1 /home/cashwinl/glumos.webblio.com/system/View/View.php(214): include('/home/cashwinl/...')
+#2 /home/cashwinl/glumos.webblio.com/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/cashwinl/glumos.webblio.com/system/View/View.php(432): CodeIgniter\View\View->render('front/user/dash...', NULL, true)
+#4 /home/cashwinl/glumos.webblio.com/app/Views/front/user/profile.php(53): CodeIgniter\View\View->include('front/user/dash...')
+#5 /home/cashwinl/glumos.webblio.com/system/View/View.php(214): include('/home/cashwinl/...')
+#6 /home/cashwinl/glumos.webblio.com/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/cashwinl/glumos.webblio.com/system/Common.php(1097): CodeIgniter\View\View->render('front/user/prof...', Array, true)
+#8 /home/cashwinl/glumos.webblio.com/app/Controllers/Dashboard.php(27): view('front/user/prof...', Array)
+#9 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Dashboard->profile()
+#10 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-01-15 09:10:23 --> Invalid argument supplied for foreach()
+#0 /home/cashwinl/glumos.webblio.com/app/Views/front/user/dashboard-employer.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/cashwinl/...', 109, Array)
+#1 /home/cashwinl/glumos.webblio.com/system/View/View.php(214): include('/home/cashwinl/...')
+#2 /home/cashwinl/glumos.webblio.com/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/cashwinl/glumos.webblio.com/system/View/View.php(432): CodeIgniter\View\View->render('front/user/dash...', NULL, true)
+#4 /home/cashwinl/glumos.webblio.com/app/Views/front/user/browsejobs.php(60): CodeIgniter\View\View->include('front/user/dash...')
+#5 /home/cashwinl/glumos.webblio.com/system/View/View.php(214): include('/home/cashwinl/...')
+#6 /home/cashwinl/glumos.webblio.com/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/cashwinl/glumos.webblio.com/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#8 /home/cashwinl/glumos.webblio.com/app/Controllers/Dashboard.php(65): view('front/user/brow...', Array)
+#9 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#10 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/cashwinl/glumos.webblio.com/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/cashwinl/glumos.webblio.com/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

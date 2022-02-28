@@ -1,0 +1,131 @@
+CRITICAL - 2022-01-29 03:21:35 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/webleade/glumos.webleader.in/app/Views/front/user/dashboard-employer.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/webleade/...', 108, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/user/dash...', NULL, true)
+#4 /home/webleade/glumos.webleader.in/app/Views/front/user/postjob.php(51): CodeIgniter\View\View->include('front/user/dash...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/post...', Array, true)
+#8 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(220): view('front/user/post...', Array)
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->postJob()
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-01-29 04:21:31 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/webleade/glumos.webleader.in/app/Views/front/user/dashboard-employer.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/webleade/...', 108, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/user/dash...', NULL, true)
+#4 /home/webleade/glumos.webleader.in/app/Views/front/user/postjob.php(51): CodeIgniter\View\View->include('front/user/dash...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/post...', Array, true)
+#8 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(220): view('front/user/post...', Array)
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->postJob()
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-01-29 04:21:34 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/webleade/glumos.webleader.in/app/Views/front/user/dashboard-employer.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/webleade/...', 108, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/user/dash...', NULL, true)
+#4 /home/webleade/glumos.webleader.in/app/Views/front/user/postjob.php(51): CodeIgniter\View\View->include('front/user/dash...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/post...', Array, true)
+#8 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(220): view('front/user/post...', Array)
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->postJob()
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-01-29 04:21:49 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/webleade/glumos.webleader.in/app/Views/front/user/dashboard-employer.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/webleade/...', 108, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/user/dash...', NULL, true)
+#4 /home/webleade/glumos.webleader.in/app/Views/front/user/postjob.php(51): CodeIgniter\View\View->include('front/user/dash...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/post...', Array, true)
+#8 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(220): view('front/user/post...', Array)
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->postJob()
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-01-29 17:55:55 --> Invalid argument supplied for foreach()
+#0 /home/webleade/glumos.webleader.in/app/Views/front/components/browse-jobs.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/webleade/...', 188, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#4 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(42): CodeIgniter\View\View->include('front/component...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#8 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(112): view('front/user/brow...', Array)
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-01-29 23:37:48 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-29 23:37:48 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-29 23:38:06 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-29 23:38:06 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-29 23:38:33 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-29 23:38:33 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Home.php(13): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-29 23:40:34 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-29 23:40:34 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-29 23:41:06 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-29 23:41:06 --> Call to a member function getResult() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-29 23:41:41 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-29 23:41:41 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(110): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-29 23:50:05 --> Column 'status' in where clause is ambiguous
+CRITICAL - 2022-01-29 23:50:05 --> Call to a member function getNumRows() on bool
+#0 /home/webleade/glumos.webleader.in/app/Controllers/Home.php(13): App\Models\JobModel->getAllJobs()
+#1 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#2 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

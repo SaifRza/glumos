@@ -1,0 +1,18 @@
+CRITICAL - 2022-02-27 10:23:29 --> Invalid argument supplied for foreach()
+#0 /home/webleade/glumos.webleader.in/app/Views/front/components/browse-jobs.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/webleade/...', 279, Array)
+#1 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#2 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/webleade/glumos.webleader.in/system/View/View.php(432): CodeIgniter\View\View->render('front/component...', NULL, true)
+#4 /home/webleade/glumos.webleader.in/app/Views/front/user/browsejobs.php(41): CodeIgniter\View\View->include('front/component...')
+#5 /home/webleade/glumos.webleader.in/system/View/View.php(214): include('/home/webleade/...')
+#6 /home/webleade/glumos.webleader.in/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/webleade/glumos.webleader.in/system/Common.php(1097): CodeIgniter\View\View->render('front/user/brow...', Array, true)
+#8 /home/webleade/glumos.webleader.in/app/Controllers/Dashboard.php(243): view('front/user/brow...', Array)
+#9 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(824): App\Controllers\Dashboard->browseAllJobs()
+#10 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 /home/webleade/glumos.webleader.in/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/webleade/glumos.webleader.in/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-02-27 02:04:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('Linear Programmer','Company name','1','1','New Delhi, India','2022-02-28'...' at line 1
+ERROR - 2022-02-27 05:58:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('Scalan Intership Programme','qwnkwqnqdwdwq','1','1','1','INDIA','2022-02-...' at line 1
+ERROR - 2022-02-27 06:00:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('Mitchells Data Analysts','AMU','1','1','0','New Delhi, India','2022-02-03...' at line 1
