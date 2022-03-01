@@ -91,3 +91,293 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 ## Running CodeIgniter Tests
 
 Information on running the CodeIgniter test suite can be found in the [README.md](tests/README.md) file in the tests directory.
+
+
+
+Hello  in the next few lines you will be getting information about how this code works
+and Here is a glimpse of topics that these code will be doing
+
+1. USER REGISTRATION 
+2. USER AUTHENTICATION
+3. USER PAYMENTS
+4. TYPES OF USERS
+5. USER VERIFICATION
+6. EMPLOYER JOB POST
+7. JOSEKER JOB VIEW or BROWSE
+8. JOBSEEKER JOB APPLY
+9. JOBSEEKER-EMPLOYER CONNECTIONS
+10. ADDING TEST TEMPLATES
+11. ADMIN PANEL
+12. PROFILE OF USER 
+13. DATABASE
+
+#### 1  USER REGISTERTAION
+
+For User Registeration
+THE ENTIRE BUILD-UP is based on MVC i.e Modal View Controller , So for modal View Controller you can visit this particular link  https://codeigniter.com/user_guide/concepts/mvc.html , This is quite better Explanation about the code that are based on MVC
+  
+  A)ROUTES
+  Check the url this registration page its 
+  //For Freelancer 
+  https://glumos.webleader.in/freelancer-signup
+  Ended as freelancer-signup
+  
+  //For Company
+  https://glumos.webleader.in/company-signup
+  Ended as comapany-signup
+  
+  GO For the Following addres in the code
+  
+  app>conig>Routes.php
+  
+  Where you will find following piece of code \
+  
+  $routes('/ADRESS IN URL/' , 'Controller':'Function')
+  
+  $routes->get('/company-signup',"Signup::index/company");
+  $routes->get('/freelancer-signup',"Signup::index/jobSeeker");
+  
+  
+  B)controllers
+  
+  HERE We have Following Controllers "Signup"
+  find Signup in Folowing Adress
+  app>controllers>CONTROLLERNAME.php
+  That Controller has a function with index name
+  That Index is returning a view like this
+  
+  
+  A SAMPLE INDEX FUNCTION
+  public function index($browsefor=null)
+    {
+      $session = \Config\Services::session($config); 
+       $checkout = new Checkouts();
+      $isSubs=$checkout->isCheckout($session->get('userdata')['email']);
+      if($isSubs){
+                 $data['subscribed']=1;
+             }
+             else{
+                 $data['subscribed']=0;
+             }
+      $job=new JobModel();
+     //List of Saved Jobs
+     if(!empty($session->get('userdata'))){
+      $saved_list=$job->getSavedJobs($session->get('userdata')['id']); 
+      
+      $data['savedJobs']=$saved_list;
+     }else{
+         $data['savedJobs']=0;   
+     }
+     
+        
+     
+       $getDetails=$job->getAllJobs();
+       $data['allJobs']=$getDetails;
+        $data['browsefor']=$browsefor;
+        return view('front/index',$data);
+    }
+  
+   
+  C)VIEW 
+  
+   return view('front/index',$data);
+   Every Function when its a get route Will have the following return as a resulting key
+    return view('front/index',$data);
+    
+    Now Go and Find the Following inside the View folder
+  
+  
+  Inside the App directory there's a directory named VIEW inside which there are Five folders named Front, Layout, admin...
+  
+  check For This address app>Views>{YourDIR}>{FileName.php}
+  You will have a basic html file which have Forms and html tags 
+  
+  
+ 
+ 
+ #### 1  USER AUTHENTICATION
+
+For User signin
+THE ENTIRE BUILD-UP is based on MVC i.e Modal View Controller , So for modal View Controller you can visit this particular link  https://codeigniter.com/user_guide/concepts/mvc.html , This is quite better Explanation about the code that are based on MVC
+  
+  A)ROUTES
+  Check the url this registration page its 
+  //For Freelancer  as well as Employer 
+  https://glumos.webleader.in/login-now
+  Ended as login-now
+  
+ 
+  
+  GO For the Following address in the code
+  
+  app>conig>Routes.php
+  
+  Where you will find following piece of code 
+  
+  $routes('/ADRESS IN URL/' , 'Controller':'Function')
+  
+  $routes->get('/login-now',"Signin::index");
+  
+  
+  B)controllers
+  
+  HERE We have Following Controllers "Signin"
+  find Signup in Folowing Adress
+  app>controllers>CONTROLLERNAME.php
+  That Controller has a function with index name
+  That Index is returning a view like this
+  
+   INDEX FUNCTION
+ public function index()
+    {
+        return view('front/signin');
+    }
+  
+   
+  C)VIEW 
+  
+   *** return view('front/signin');
+   Every Function when its a get route Will have the following return as a resulting key
+    return view('front/index',$data);
+    
+  ***  Now Go and Find the Following inside the View folder
+  
+  
+  Inside the App directory there's a directory named VIEW inside which there are Five folders named Front, Layout, admin...
+  
+  check For This address app>Views>{YourDIR}>{FileName.php}
+  You will have a basic html file which have Forms and html tags 
+  
+  
+   #### 1  USER Payments
+   
+  ***Stripe Pamnets Gateway***
+  
+  For User Payments
+  THE ENTIRE BUILD-UP is based on MVC i.e Modal View Controller , So for modal View Controller you can visit this particular link   ,          https://codeigniter.com/user_guide/concepts/mvc.html , This is quite better Explanation about the code that are based on MVC
+  
+  For Stripe Integration
+  Go For Following tutorial;
+  Source  1 Youtube
+  https://www.youtube.com/watch?v=UjcSWxPNo18
+  
+  Source 2 Stripe Docs
+  https://stripe.com/docs/billing/quickstart
+   You will see heading as  
+   ***Prebuilt subscription page with Stripe Checkout***
+   *** Do Remember To Select Php Code in striep docs Page
+ 
+  
+  A)ROUTES
+  Check the url this registration page its 
+  //For Freelancer  as well as Employer 
+   https://glumos.webleader.in/checkout
+  Ended as checkout
+  
+ 
+  
+  GO For the Following address in the code
+  
+  app>conig>Routes.php
+  
+  Where you will find following piece of code 
+  
+  $routes('/ADRESS IN URL/' , 'Controller':'Function')
+  
+  $$routes->get('/payment-process',"Checkout::index");
+  
+  
+  B)controllers
+  ***REPLACE TEST KEYS & ALL TEST Params WITH LIVE KEYS & Params***
+  
+  HERE We have Following Controllers "Checkout"
+  find Signup in Folowing Adress
+  app>controllers>CONTROLLERNAME.php
+  That Controller has a function with index name
+  That Index is returning a view like this
+  
+   INDEX FUNCTION
+  public function index()
+    {
+      $session = \Config\Services::session($config);
+      $checkout = new Checkouts();
+      $isSubs=$checkout->isCheckout($session->get('userdata')['email']);
+      if($isSubs){
+          $res=$checkout->checkoutDetails($session->get('userdata')['email']);
+          $data['res']=$res;
+           $data['subscribed']=1;
+      }else{
+           $data['subscribed']=0;
+       }
+       
+      $data['price']=5;
+      return view('subscription/checkout',$data);
+        
+    }
+  
+   
+  C)VIEW 
+  ***REPLACE TEST KEYS & ALL TEST Params WITH LIVE KEYS & Params***
+  
+   *** return view('subscription/checkout');
+   Every Function when its a get route Will have the following return as a resulting key
+    return view('subscription/checkout',$data);
+    
+  ***  Now Go and Find the Following inside the View folder
+  
+  
+  Inside the App directory there's a directory named VIEW inside which there are Five folders named Front, Layout, admin...
+  
+  check For This address app>Views>{YourDIR}>{FileName.php}
+  You will have a basic html file which have Forms and html tags 
+  
+  ***REPLACE TEST KEYS & ALL TEST Params WITH LIVE KEYS & Params***
+  
+  
+  
+ 
+ 4  ###TYPES_OF_USERS####
+ 
+ EMPLOYERS
+ ***Functionalities***
+ a)Dashboard
+ b)Post Jobs
+ c)View Applicants
+ d) Edit there Profile
+
+ JOBSEEKERS
+ 
+ ***Functionalities***
+ a)Dashboard
+ b)Apply For Jobs
+ c)View Applicants
+ d) Edit there Profile
+ 
+ 
+ 5. VERIFICATIONS
+ 
+ ***Verification is done for employers Only***
+ When ever a New Employer is Signed Up
+ He has To Submit His Details On the Form Available On the Dashboard 
+ When Admin Approves His Profile He Would be Able To Post Jobs 
+ 
+ 
+### EMPLOYER JOB POSTS
+
+Theres a Multistep Job Post Page on the Dashboard
+that Multistep Job Post
+  
+  
+  
+
+  
+  
+  
+  
+ 
+  
+  
+
+
+
+
