@@ -426,7 +426,7 @@ Youn will see that itself is form which submits in ajax way when blue next butto
 codes ends***
   
 
-### 7. JOSEKER JOB VIEW or BROWSE JOBS
+### 7. JOBSEEKER JOB VIEW or BROWSE JOBS
 
   For Job View
   THE ENTIRE BUILD-UP is based on MVC i.e Modal View Controller , So for modal View Controller you can visit this particular link   ,          https://codeigniter.com/user_guide/concepts/mvc.html , This is quite better Explanation about the code that are based on MVC
