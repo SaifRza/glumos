@@ -108,8 +108,6 @@ and Here is a glimpse of topics that these code will be doing
 9. JOBSEEKER-EMPLOYER CONNECTIONS
 10. ADDING TEST TEMPLATES
 11. ADMIN PANEL
-12. PROFILE OF USER 
-13. DATABASE
 
 #### 1  USER REGISTERTAION
 
@@ -366,6 +364,732 @@ THE ENTIRE BUILD-UP is based on MVC i.e Modal View Controller , So for modal Vie
 
 Theres a Multistep Job Post Page on the Dashboard
 that Multistep Job Post
+  
+A) ROUTES
+
+Following routes are post routes that updates the data inside database in ***Job_posts*** Table
+Post Route
+$routes->post('/updateJob',"PostJob::updateJob");
+The Following Post Request Updates the Job Post Whenever you click the Blue Next Button
+What ever is visible on the the Screen i.e on multistep Job Post Page from employers View
+
+Youn will see that itself is form which submits in ajax way when blue next button is clicked
+
+  
+  B)controllers
+  
+  HERE We have Following Controllers "PostJob"
+  find PostJob
+  in Folowing Adress
+  app>controllers>CONTROLLERNAME.php
+  That Controller has a function with index name
+  That Index is returning a view like this
+  
+   updateFunction
+
+***public function updateJob(){
+    $session = \Config\Services::session($config);
+        $job_type=$this->request->getPost('job_type');
+         $job_title=$this->request->getPost('job_title');
+          $payroll_type=$this->request->getPost('payroll_period');
+          $rate=$this->request->getPost('working_rate');
+          $job_desc=$this->request->getPost('desc');
+        $budget=$this->request->getPost('project_budget');
+        $experience=$this->request->getPost('experience_type');
+        $skills=$this->request->getPost('skills');
+        $temp_id=$this->request->getPost('template_id');
+        $w_type=$this->request->getPost('w_type');
+        $rate_amu=$this->request->getPost('rate_amu');
+        
+        if(!empty($this->request->getPost('w3review'))){
+            //Job Type exists
+            $JobData=[
+              'job_description'=>$this->request->getPost('w3review'),
+              'job_heading'=>$this->request->getPost('title'),
+              'status'=>1,
+              'wage_type'=>$w_type,
+              'hourly_rate'=>$rate_amu
+                ];
+       
+        $find_by=$session->get('job_find_by');
+        $jbtable=new JobModel();
+        $updated=$jbtable->updateJob($JobData,$find_by);
+        if($updated){
+            $session->remove('job_find_by');
+            echo json_encode(array('response'=>true,'message'=>'Updated Job Successfully'));
+        }else{
+            echo json_encode(array('response'=>false,'message'=>'Job Not Added To Database'));
+        }
+            
+    }
+
+codes ends***
+  
+
+### 7. JOSEKER JOB VIEW or BROWSE JOBS
+
+  For Job View
+  THE ENTIRE BUILD-UP is based on MVC i.e Modal View Controller , So for modal View Controller you can visit this particular link   ,          https://codeigniter.com/user_guide/concepts/mvc.html , This is quite better Explanation about the code that are based on MVC
+
+
+**API Functioning**
+___We are making cURL Php Requests On this controller___
+
+A)CONTROLLERS
+BrowseJobs.php
+location
+app>controllers>BrowseJobs.php
+
+
+Codes
+    public function graphQl($search=null){
+  $curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://remoteok.com/api',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'GET',
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+}
+
+CODES ENDS
+         
+B)VIEW
+browse-jobs.php
+location
+app>views>front>browse-jobs.php
+
+  Codes
+  //Here resp is the json array which we get on curl request on the above view page 
+var info=resp;
+            
+
+var datas = info.filter( jobs => String(jobs.position).match(str));
+
+
+
+var data_filter=datas.slice(start,end);
+
+Object.values(data_filter).forEach((val) => {
+      if(val){
+           if(val.company_logo){
+              var logo=val.company_logo; 
+           }else{
+               var logo=img_url;
+           }
+           var tagid="taga-"+val.id;
+       const box='-----HTML----HERE------';
+            $("#list-jobs").append(box);
+       }else{
+           const box='<h3>No Results Matches</h3>'
+           $("#list-jobs").append(box);
+       }
+      }); 
+ CodeEnds     
+           
+  
+
+             
+              
+### 7. JOSEKER  APPLY JOBS
+  
+   For Job seeker Apply Jobs
+  THE ENTIRE BUILD-UP is based on MVC i.e Modal View Controller , So for modal View Controller you can visit this particular link   ,          https://codeigniter.com/user_guide/concepts/mvc.html , This is quite better Explanation about the code that are based on MVC
+  
+  
+  Job seeker can easily apply for Jobs
+  when he is in Logged in states
+  So,
+  Being On Home Page Or in Browse Jobs Page
+  He can Easily Apply For Jobs
+  
+  ***For External Jobs**
+  He Would click on Apply Buttons
+  And Apply on third Party Where the anchor tags directs
+  
+  <a href="____URL__" target="_blank">Apply Now</a>
+  
+  
+  ***For Glumos Jobs***
+  When User will click on any apply now button
+  He will e target to another Tab with following Url
+  
+  A Sample URL Job View+
+  https://glumos.webleader.in/jobview/0b08f572e88ddb6b401f82507f92806f
+  
+  
+  Here 0b08f572e88ddb6b401f82507f92806f is job post code
+  and  /jobview/ is the get Route Which accepts a parameter i.e Job post code
+  
+  A)ROUTES
+  Here is our  Line of get Routes
+  $routes->get('/jobview/(:any)',"Dashboard::jobExplanation/$1");
+  
+  In the Above Route
+  (:any) is the parameter basically a String Parameter
+  Where the job post code (i.e sample) 0b08f572e88ddb6b401f82507f92806f
+  is passed in the url
+  Then in the Another Parameter of route
+  "Dashboard::jobExplanation/$1"
+  $1 is the parameter Used in Controller to Find that job
+  $1 always holds the value of paramenter (:any) passed in the URL
+  
+  FOR Applying
+  
+  If the Job Seeker is In Authenticated state then On Click on Apply now Blue Button he will be 
+  Moved to another Page With the Following Url
+  
+  Initially Apply now Buttons check if the user is in logged in state or not
+  and If he has Applied for this Test
+  If already applied he Will get message as 
+  Already Applied For this Job
+  
+  If not He will moved to another Page Which Will have a Form 
+  Question Form
+  //Form ??
+  
+  Form is basically all the question that a Particluar template that is associated with that job Lies
+  Each Job post has a Template Each Template has template Id
+  That Template Id is associate with the question that lies in thio template
+  
+  On Complety Filling up Form
+  Job Applied is now visible At Jobseeker Dashboard\
+  
+  B)CONTROLLERS
+  
+  For Job View
+   We have Controllers in Our Route Funtion as 
+  Dashboard::jobExplanation/$1 
+  Dashboard.php
+  
+  $routes->get('/jobview/(:any)',"Dashboard::jobExplanation/$1");
+  
+  location
+  app>Cntrollers>Dashboard.php
+  In thath Check out the Function name
+  Dashboard::jobExplanation/$1
+  i.e jobExplantion
+  >>Codes
+  public function jobExplanation($id){
+       $session = \Config\Services::session($config);
+       $job=new JobModel();
+       $seeker= new JobSeekers();
+       
+       
+       $jobInfo=$job->getJobDetails($id);
+       $company_id=$jobInfo->company_id;
+       $company=$seeker->getCompanyDetails($company_id);
+       $company_assets=$seeker->getCompanyAssets($company_id);
+       if($jobInfo<1){
+             $data['error']='Bad Gateway';
+          $data['message']='You entered a manipulated the link';
+           return view('front/register',$data);
+       }else{
+          $data['jobInfo']=$jobInfo;
+          $data['company']=$company;
+          $data['company_assets']=$company_assets;
+           return view('front/user/jobInfo',$data);
+       }
+       
+    }
+                       
+                       <<<End Of Code
+  
+  
+  ///////
+  
+  ### 
+  ###  JOBSEEKER-EMPLOYER CONNECTIONS
+  ### 
+  When A Particular Submits the Job Template
+  Then If he had Passed the Test. 
+  Following Details on Employer Dashboard Whos has posted that job will be visible
+  If jobseeker has passed the test i.e scored above 0.50 i.e 50 %
+  
+  1.Name
+  2. Image
+  3. Email
+  4. Whatsapp
+  
+  together with these things 
+  Following buttons will be there
+  Email ,Whatsapp,
+  View Profile
+  
+  When Employer Will click View Profile
+  
+  Following Routes and Controllers Will be Called
+  
+  A) ROUTES
+  Here is the Route Which is Called When View Profile Button is Clicked
+  $routes->get('/view-profile/(:any)',"Dashboard::resumeView/$1");
+  
+  This Routes get the resumeView Function which is as Follows
+  
+  B)CONTROLLERS
+  
+  Dashboard.php
+  location
+   app>controller>Dashboard.php
+  
+  //function
+  
+   public function resumeView($id){
+     $session = \Config\Services::session($config);
+     $employer=new Employers();
+    
+    
+     $user_hashmail=$id;
+     $seeker=new JobSeekers();
+     $myData=$seeker->getDetailsCoded($user_hashmail);
+     $email=$myData[0]->email;
+     $name=$myData[0]->name;
+     $expData=$seeker->getExpCoded($email); 
+     
+     if($session->get('userdata')['usertype']=='employer'){
+         $Emp_email=$session->get('userdata')['email'];
+         //Check connection exists or not
+         $isConnected=$employer->isConnected($id,$Emp_email);
+         if($isConnected){
+             
+         }else{
+             //insert New connection
+             $dataInsert=[
+                 'employer'=>$Emp_email,
+                 'seeker_email'=>$email,
+                 'hashmail'=>$id,
+                 'seeker_name'=>$name,
+                 'status'=>0
+                 ];
+             $addConnection=$employer->addNewConnection($dataInsert);
+         }
+         
+     }
+    
+     $data["myData"]=$myData;
+     $data['exp']=$expData;
+          $data['view_type']=0;
+          return view('front/user/view_user',$data); 
+    }
+  
+  
+  
+  C)VIEWS
+  Here is the return method of the Above Function
+  return view('front/user/view_user',$data);
+  
+  As THis clearly Says
+  Locate the Following View Files
+  front/user/view_user]
+  
+  location
+  app>Views>Front>view_user.php
+  
+  $data is the array variable which holds array of all of the Details of the JobsSeeker
+  and Data is used in the view Page to get contents of the user and Display it
+  where necessary
+  
+  
+  
+  ### ADD TEST TEMPLATES
+  When an emplpyer is in Logged in state He woould be able to add Templates
+  and Add Question inside that Template
+  
+  
+  A)Routes
+  Routes to add Template
+  $routes->post('/add-template',"PostJob::addTemp");
+  
+  Routes to add Questions
+  $routes->post('/add-question',"PostJob::addQuestion");
+  
+  
+  //get Routes
+  $routes->get('/view-template',"Dashboard::allTemplates");
+  $routes->get('/add-template',"Dashboard::addTemplate");
+  
+  For Adding Template  /add-tempate is used and It uses the function
+  Dashboard::addTemp
+  Within the controller Dashboard
+  
+   For Adding Question  /add-question is used and It uses the function
+  Dashboard::addQuestion
+  Within the controller Dashboard
+  
+  B)Controller
+  
+  Function to add Template
+  
+
+    
+    public function addTemplate(){
+       $session = \Config\Services::session($config);
+       $template=new Template();
+        $checkout = new Checkouts();
+       $isSubs=$checkout->isCheckout($session->get('userdata')['email']);
+       $id=$session->get('userdata')['id'];
+        if($isSubs){
+                 $data['subscribed']=1;
+                 $sub=1;
+             }
+             else{
+                 $data['subscribed']=0;
+                 $sub=0;
+             }
+       $myTemplates=$template->loadTemplate($id);
+       $myTemplates=$template->loadTemplate($id);
+                if(count($myTemplates)>0){
+               foreach($myTemplates as $myT){
+                   $count=$template->countQuestions($myT->template_id);
+                   $updateTemp=$template->updateT($count,$myT->template_id);
+               } 
+               }else{
+                      // echo "Error with count variable";
+                   } 
+       $data['myTemplates']=$myTemplates;
+      return view('front/user/add-templates',$data); 
+    }
+  
+  
+  
+  Check the PostJob.php Controller For Function to addQuestion
+   Function to add Question
+  
+
+    
+    public function addQuestion(){
+        date_default_timezone_set('Asia/Kolkata');
+        $session = \Config\Services::session($config);
+       $data=$this->request->getPost();
+       $question_type=$this->request->getPost('type_of');
+       $parent_id=$this->request->getPost('parent_id');
+       $q=$this->request->getPost('question');
+       $a=$this->request->getPost('option-1');
+       $b=$this->request->getPost('option-2');
+       $c=$this->request->getPost('option-3');
+       $d=$this->request->getPost('option-4');
+       $img=$this->request->getFile('userfile');
+       $correct=$this->request->getPost('radioBox');
+       if(1>2){
+           echo json_encode(array('response'=>false,'message'=>'Please Enter All Fields'));
+       }
+       else{
+        //Image Availablity-check
+        if(empty($img)){
+           $img_name=null; 
+           $attached=2;
+        }else{
+            $attached=1;
+                 $input = $this->validate([
+                        'userfile' => [
+                            'uploaded[userfile]',
+                            'mime_in[userfile,image/jpg,image/jpeg,image/png]',
+                            'max_size[userfile,28024]',
+                        ]
+                    ]);
+                
+                    if (!$input) {
+                        print_r('Choose a valid file');
+                    } else {
+                        $img = $this->request->getFile('userfile');
+                       
+                        $img->move(ROOTPATH.'httpdocs/employer-questions/');
+                        $img_name=$img->getName();
+                    }
+        }
+           
+       $tempData=[
+        'question_id'=>mt_rand(10000000,99999999),
+        'company_id'=>$session->get('userdata')['id'],
+        'skill_type'=>$question_type,
+        'question_no'=>0,
+        'parent_id'=>$parent_id,
+        'image_name'=>$img_name,
+        'question_text'=>$q,
+        'option_a'=>$a,
+        'option_b'=>$b,
+        'option_c'=>$c,
+        'option_d'=>$d,
+        'correct'=>$correct,
+        'created_at'=>date('Y-m-d H:i:s')  
+           ];
+       $template=new Template();
+       $addTemplate=$template->addQuestion($tempData);
+       $tempInfo=$template->getTempInfo($parent_id);
+       $pre_hard=$tempInfo[0]->hard;
+       $pre_soft=$tempInfo[0]->soft;
+       
+       if($question_type=="1"){
+           //Hardskill Question
+           $set=$pre_hard+1;
+           $type="hard";
+       }else{
+           //Softskill Question
+           $set=$pre_soft+1;
+           $type="soft";
+       }
+       if($addTemplate){
+           //updating Data for Parent Template
+           $updateTemplate=$template->updateTemp($set,$type,$parent_id);
+           echo json_encode(array('response'=>true,'message'=>'Added Question Successfully'));
+           
+           return redirect()->to(base_url('/add-template'));
+       }
+       //print_r($data);
+      }
+    }
+  
+  
+  
+  
+  
+  ##### A D M I N    P A N E L
+  
+  
+Admin Panel View directory
+app>views>admin
+
+Admin Panel controller Directory
+app>Controllers>Admin.php
+
+Admin Panel Routes
+
+1. $routes->post('/adminlogin',"Admin::login");
+2. $routes->get('/admin',"Admin::index");
+3. $routes->get('/Admin/view-employer',"Admin::allEmployers");
+4. $routes->post('/Admin/viewEmployer',"Admin::verifyEmployer");
+5. $routes->get('/Thilak',"Admin::dashboard");
+  
+  
+A)ROUTES
+Login Routes
+$routes->post('/adminlogin',"Admin::login");
+
+Dashboard Routes
+$routes->get('/admin',"Admin::index");
+
+List Of All Emploers
+$routes->get('/Admin/view-employer',"Admin::allEmployers");
+
+Routes To Verify Employer
+$routes->post('/Admin/viewEmployer',"Admin::verifyEmployer");
+
+
+C)Controllers
+
+Admin.php is the Only controller Used For Configuring Admin Panel
+Location: app>Controllers>Admin.php
+
+Admin.php
+
+  
+  
+    public function index()
+    {
+    
+    return view('admin/login');
+    }
+    public function login(){
+    $session = \Config\Services::session($config);
+    $email = $this->request->getPost('emailed');
+    $password = $this->request->getPost('passworded');
+    $admin= new AdminModel();
+    $adminExists=$admin->isAdminValid($email,$password);
+    if($adminExists){
+        $str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        $key=substr(str_shuffle($str_result), 0, 36);
+        $addSessionKey=$admin->addNewKey($key);
+        if($addSessionKey){
+            $session->set("userdata", array(
+                'key' => $key,
+               ));
+          echo json_encode(array('response'=>true,'message'=>'Logged in Successfully'));   
+        }else{
+           echo json_encode(array('response'=>true,'message'=>'Session Key Not added'));  
+        }
+       
+    }else{
+        echo json_encode(array('response'=>false,'message'=>'Emailid or Password Incorrect'));  
+    }
+    }
+    function dashboard(){
+    $session = \Config\Services::session($config); 
+     $admin= new AdminModel();
+    $adminData=$admin->getAdminInfo();
+    $data['adminData']=$adminData;
+    $sesKey=$session->get('userdata')['key'];
+    $dbKey=$adminData[0]->sessionKey;
+    if($sesKey==$dbKey){
+      $custom=new UserModel();
+      $data['subjects']=$custom->all();
+     return view('admin/index',$data);   
+    }else{
+      $session->setFlashdata('message', 'Somebody Tries To Login Again');    
+      return view('admin/login');   
+    }
+       
+   
+    }
+    public function company(){
+      
+        $custom=new UserModel();
+      $data['subjects']=$custom->all();
+      $admin= new AdminModel();
+      $employers=$admin->getAllEmployers();
+      $data['employers']=$employers;  
+     return view('admin/all-employers',$data);    
+    }
+    
+    //Customisation fuhctions
+    
+    public function custom(){
+      
+        $custom=new UserModel();
+        $data['hero']=$custom->hero();
+      $data['subjects']=$custom->all();
+      $admin= new AdminModel();
+      $jobSeeker=$admin->getAllPayments();
+      $data['payments']=$jobSeeker;  
+     return view('admin/site-custom.php',$data);    
+    }
+    
+    
+    
+    
+    public function jobSeeker(){
+      
+        $custom=new UserModel();
+      $data['subjects']=$custom->all();
+      $admin= new AdminModel();
+      $jobSeeker=$admin->getAllJobSeekers();
+      $data['jobseekers']=$jobSeeker;  
+     return view('admin/job-seeker',$data);    
+    }
+    public function subscriptions(){
+      
+        $custom=new UserModel();
+      $data['subjects']=$custom->all();
+      $admin= new AdminModel();
+      $jobSeeker=$admin->getAllPayments();
+      $data['payments']=$jobSeeker;  
+     return view('admin/subscriptions.php',$data);    
+    }
+    
+     public function jobs(){
+      
+        $custom=new UserModel();
+      $data['subjects']=$custom->all();
+      $admin= new AdminModel();
+      $employers=$admin->getAllEmployers();
+      $data['employers']=$employers;  
+     return view('admin/all-jobs',$data);    
+    }
+    
+     public function competitions(){
+      
+        $custom=new UserModel();
+      $data['subjects']=$custom->all();
+      $admin= new AdminModel();
+      $employers=$admin->getAllEmployers();
+      $data['employers']=$employers;  
+     return view('admin/competitions',$data);    
+    }
+    
+     public function errorReport(){
+      
+        $custom=new UserModel();
+      $data['subjects']=$custom->all();
+      $admin= new AdminModel();
+      $employers=$admin->getAllEmployers();
+      $data['employers']=$employers;  
+     return view('admin/error-reports',$data);    
+    }
+    
+    function updateCompanyStatus(){
+     $id= $this->request->getPost('id'); 
+     $status= $this->request->getPost('status'); 
+     $array=[
+         'verification'=>$status
+         ];
+     $admin=new AdminModel();
+        $updated=$admin->updateCompany($array,$id);
+        if($updated){
+            echo json_encode(array('response'=>true,'message'=>'Updated Data Successfully'));
+        }else{
+             echo json_encode(array('response'=>false,'message'=>'Data Not Updated'));
+        }
+    }
+    
+    function verifyEmployer(){
+      $id= $this->request->getPost('id'); 
+        echo json_encode(array('response'=>true,'message'=>"Verifying $id"));
+    }
+    function allEmployers(){
+       
+        $custom=new UserModel();
+      $data['subjects']=$custom->all();
+      $admin= new AdminModel();
+      $employers=$admin->getAllEmployers();
+      $data['employers']=$employers;  
+     return view('admin/all-employers',$data);
+    }
+    function analytics(){
+       
+        $custom=new UserModel();
+      $data['subjects']=$custom->all();
+        
+     return view('admin/index',$data);
+    }
+    
+
+### THIS CODE IS LICENSED TO GLUMOS.COM UNDER THILAK  SUNDARAM &   W. SATHISH 
+### THIS CODE IS NOT FOR SALE
+
+***Author Syed Saif Raza
+*** mail at syedsaifrza@gmail.com
+*** Contact For Assistance +91-7488649102
+*** Visit    Syedsaif.in
+*** Visit    Syed-saif.com
+*** Visit    Webblio.com
+*** Documented at 02-03-2022
+  
+  
+### THIS CODE IS LICENSED TO GLUMOS.COM UNDER THILAK  SUNDARAM &   W. SATHISH 
+### THIS CODE IS NOT FOR SALE
+
+Why You I Documented Your Code
+As noted above, many developers don’t understand the purpose of code documentation. They’ll argue that good code should be self-documenting and that you shouldn’t need to explain it. These people are, in a word, wrong. The truth is that good documentation is an essential part of any code base. Why? Because people shouldn’t need to read all of your code in order to understand what it does. “People” in that previous sentence can refer to anyone, including your future self.
+
+The truth is that often, the “people” who’ll need to understand code after it’s written is you. That little bit of logic that seemed so clever when you wrote it six months ago might be difficult to understand today. If your code is well-documented, you don’t need to spend time trying to understand what it does. You’ll be able to spend a few seconds looking at the description and then get back to what you’re working on right now.
+
+### THIS CODE IS LICENSED TO GLUMOS.COM UNDER THILAK  SUNDARAM &   W. SATHISH 
+### THIS CODE IS NOT FOR SALE
+
+
+
+###      T  H  A  N   K      Y  O  U
+
+
+         
+         
+
+         
+         
+
+
+
+
   
   
   
